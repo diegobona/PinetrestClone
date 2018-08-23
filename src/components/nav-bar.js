@@ -16,7 +16,6 @@ const styles = {
     flexGrow: 1
   },
   menuButton: {
-    marginLeft: -12,
     marginRight: 20
   }
 };
@@ -48,4 +47,4 @@ ButtonAppBar.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(ButtonAppBar);
+export default withStyles(styles, { withTheme: true })(ButtonAppBar);

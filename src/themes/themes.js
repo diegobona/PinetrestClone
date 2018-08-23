@@ -7,7 +7,7 @@ import teal from "@material-ui/core/colors/teal";
 export const baseTheme = createMuiTheme({
   palette: {
     primary: {
-      main: "#90caf9"
+      main: "#e8eaf6"
     },
     secondary: pink,
     error: red,

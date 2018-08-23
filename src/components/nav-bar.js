@@ -17,6 +17,11 @@ const styles = {
   },
   menuButton: {
     marginRight: 20
+  },
+  button: {
+    borderRadius: 20,
+    padding: 10,
+    marginLeft: 15
   }
 };
 
@@ -34,9 +39,20 @@ function ButtonAppBar(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="title" color="inherit" className={classes.flex}>
-            News
+            PicTerest
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit" className={classes.button}>
+            Home
+          </Button>
+          <Button color="inherit" className={classes.button}>
+            dashboard
+          </Button>
+          <Button color="inherit" className={classes.button}>
+            settings
+          </Button>
+          <Button color="inherit" className={classes.button}>
+            Login
+          </Button>
         </Toolbar>
       </AppBar>
     </div>

@@ -24,9 +24,12 @@ const styles = {
     padding: 10,
     marginLeft: 15
   },
+  imageContainer: {
+    //flexGrow: 1
+  },
   image: {
-    padding: 10,
-    width: 7 + "em"
+    paddingTop: 5,
+    width: 5 + "em"
   }
 };
 
@@ -36,7 +39,9 @@ function NavBar(props) {
     <div className={classes.root}>
       <AppBar position="fixed">
         <Toolbar>
-          <img src={logo} alt="logo" className={classes.image} />
+          <span className={classes.imageContainer}>
+            <img src={logo} alt="logo" className={classes.image} />
+          </span>
           <Button color="inherit" className={classes.button}>
             Home
           </Button>

@@ -18,7 +18,7 @@ const styles = {
     objectFit: "cover"
   },
   cardWrapper: {
-    width: 100 + "%",
+    width: 250,
     padding: 10,
     position: "relative"
   },
@@ -56,7 +56,6 @@ function ImgMediaCard(props) {
           <Typography component="p">Some kind of description</Typography>
         </CardContent>
       </Card>
-      <div className={classes.overlay} />
     </div>
   );
 }
@@ -66,3 +65,5 @@ ImgMediaCard.propTypes = {
 };
 
 export default withStyles(styles)(ImgMediaCard);
+
+//<div className={classes.overlay} />
